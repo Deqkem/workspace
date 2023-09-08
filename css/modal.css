@@ -1,0 +1,44 @@
+.modal {
+	position: fixed;                           /* растягиваем на весь экран */
+	inset: 0;                                  /* растягиваем на весь экран */
+	background-color: rgba(0, 0, 0, 0.50);
+	cursor: pointer;
+	overflow-y: auto;                          /* окно будет скролиться по вертикали */
+	display: flex;
+	z-index: 10;
+  padding: 30px;
+}
+
+.modal__main {
+  position: relative;
+	cursor: default;
+	margin: auto;
+}
+
+.modal__close {
+	color: rgba(204, 204, 204, 1);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  outline: 1px solid transparent;
+  line-height: 0;
+	border-radius: 3px;
+}
+
+.modal__close:focus-visible {
+	color: rgba(23, 23, 23, 1);
+	outline-color: #2A18FF;
+}
+
+.modal__close:hover {
+	color: rgba(23, 23, 23, 1);
+}
+
+@media (max-width: 640px) {
+	.modal {
+		padding: 15px;
+	}
+}

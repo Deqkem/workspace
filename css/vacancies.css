@@ -1,0 +1,99 @@
+.vacancies {
+  padding: 50px 0;
+}
+
+.vacancies__container {
+  display: flex;
+  align-items: start;
+  gap: 24px 20px;
+}
+
+.vacancies__filter-btn {
+  display: none;
+}
+
+.vacancies__filter {
+  flex: 0 0 280px;
+}
+
+.vacancies__cards {
+  flex-basis: 100%;
+}
+
+@media (max-width: 1140px) {
+  .vacancies {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 940px) {
+  .vacancies {
+    padding: 30px 0;
+  }
+
+  .vacancies__container {
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .vacancies__filter-btn {
+    display: flex;
+    align-items: center;
+    color: #2A18FF;
+    margin-bottom: 24px;
+    transition-property: margin-bottom, color;
+    transition-duration: 0.2s, 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s 0s;
+    line-height: 20px;
+  }
+
+  .vacancies__filter-btn:hover:not(:focus) {
+    color: #A6ADFF;
+  }
+
+  .vacancies__filter-btn-arrow {
+    position: relative;
+    top: -2px;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .vacancies__filter-btn_active {
+    margin-bottom: 32px;
+    transition-delay: 0s;
+  }
+
+  .vacancies__filter-btn_active .vacancies__filter-btn-arrow {
+    transform: rotate(180deg);
+    top: 2px;
+  }
+
+  .vacancies__filter {
+    width: 100%;
+    flex-basis: auto;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .vacancies__filter_active {
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .vacancies__cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .vacancies {
+    padding: 20px 0;
+  }
+
+  .vacancies__filter-btn_active {
+    margin-bottom: 24px;
+  }
+}

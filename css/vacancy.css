@@ -1,0 +1,44 @@
+.vacancy {
+  border-radius: 16px;
+  background-color: #FFF;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.vacancy:hover {
+  background-color: #F9FAFF;
+}
+
+.vacancy:focus-visible {
+  border-color: #A6ADFF;
+}
+
+.vacancy__img {
+  max-height: 44px;
+  margin-bottom: 12px;
+}
+
+.vacancy__company {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.vacancy__title {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 5px;
+  border-radius: 4px;
+  background: #EAECFF;
+  margin-bottom: 8px;
+}
+
+.vacancy__fields {
+  color: #CCC;
+}
